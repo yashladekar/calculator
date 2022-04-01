@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap');
+:root {
+    --body-bg-color: #29A68F;
+    --wrapper-bg-color: #F2F2F2;
+    --equal-bg-color: rgb(80, 218, 188);
+    --button-bg-color: rgb(200, 237, 249);
+    --function-bg-color: rgb(80, 218, 149);
+}
+
+.darkmode {
+    --body-bg-color: #072227;
+    --wrapper-bg-color: #35858B;
+    --equal-bg-color: rgb(80, 218, 188);
+    --button-bg-color: #AEFEFF;
+    --function-bg-color: rgb(172, 148, 228);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 350px;
+    margin: 45px auto;
+    border-radius: 10px;
+    text-align: center;
+    background: var(--wrapper-bg-color);
+    padding-bottom: 10px;
+    box-shadow: 0 20px 35px grba(0, 0, 0, 0.1);
+}
+
+.output {
+    background: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+input[type="text"] {
+    width: 90%;
+    font-size: 28px;
+    padding: 30px 5px;
+    margin: 15px 0 20px 0;
+    text-align: right;
+    color: black;
+    background: transparenst;
+    border: none;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input[type="button"] {
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: none;
+}
+
+input[type="button"]:hover {
+    background-color: var(--button-bg-color);
+    transition: all 0.2s;
+}
+
+.fun {
+    color: var(--function-bg-color);
+}
+
+.clr {
+    color: red;
+}
+
+#equal-fun {
+    background: var(--equal-bg-color);
+    color: white;
+}
+
+#equal-fun:hover {
+    background-color: #AEFEFF;
+    transition: all 0.2s;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    background: none;
+    position: absolute;
+    right: 1rem;
+}

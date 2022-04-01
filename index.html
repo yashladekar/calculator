@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        calculator
+    </title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="#" name="cal">
+            <div class="output">
+                <input type="text" name="disp" id="display" placeholder="0">
+            </div>
+            <input type="button" class="clr" value="C" onclick="cal.display.value=''">
+            <input type="button" class="fun" value="(" onclick="cal.display.value +='('">
+            <input type="button" class="fun" value=")" onclick="cal.display.value +=')'">
+            <input type="button" class="fun" value="%" onclick="cal.display.value +='%'">
+            <br>
+            <input type="button" value="1" onclick="cal.display.value +=1">
+            <input type="button" value="2" onclick="cal.display.value +=2">
+            <input type="button" value="3" onclick="cal.display.value +=3">
+            <input type="button" class="fun" value="/" onclick="cal.display.value += '/'">
+            <br>
+            <input type="button" value="4" onclick="cal.display.value += 4">
+            <input type="button" value="5" onclick="cal.display.value += 5">
+            <input type="button" value="6" onclick="cal.display.value += 6">
+            <input type="button" class="fun" value="*" onclick="cal.display.value += '*'">
+            <br>
+            <input type="button" value="7" onclick="cal.display.value += 7">
+            <input type="button" value="8" onclick="cal.display.value += 8">
+            <input type="button" value="9" onclick="cal.display.value += 9">
+            <input type="button" class="fun" value="+" onclick="cal.display.value += '+'"> <br>
+            <input type="button" value="." onclick="cal.display.value += '.'">
+            <input type="button" value="0" onclick="cal.display.value += 0">
+            <input type="button" id="equal-fun" class="fun" value="=" onclick="equal()">
+            <input type="button" class="fun" value="-" onclick="cal.display.value += '-'">
+        </form>
+    </div>
+    <button id="dark" class="btn" onclick="darkmode()"><i class="fa-solid fa-moon"></i></button>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/31d23aeb50.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
