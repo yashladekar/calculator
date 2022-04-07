@@ -96,11 +96,31 @@ input[type="button"]:hover {
 .btn {
     width: 70px;
     height: 70px;
-    margin: 6px;
+    margin: 5px;
     font-size: 24px;
     cursor: pointer;
     border-radius: 5px;
     background: none;
     position: absolute;
     right: 1rem;
+}
+
+@media (max-width: 465px) {
+    .btn {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        font-size: 24px;
+        position: absolute;
+        right: 1rem;
+        top: -6px;
+    }
+    .wrapper {
+        padding-top: 5px;
+        /* margin-top: 30px; */
+        box-shadow: none;
+    }
+    .output {
+        margin-top: -5px;
+    }
 }
